@@ -1,6 +1,6 @@
-LOAD DATA INPATH '/user/rowest/people.csv' INTO TABLE people_temp;
-LOAD DATA INPATH '/user/rowest/organizations.csv' INTO TABLE organizations_temp;
-LOAD DATA INPATH '/user/rowest/customers.csv' INTO TABLE customers_temp;
+LOAD DATA INPATH '/user/user_name/people.csv' INTO TABLE people_temp;
+LOAD DATA INPATH '/user/user_name/organizations.csv' INTO TABLE organizations_temp;
+LOAD DATA INPATH '/user/user_name/customers.csv' INTO TABLE customers_temp;
 
 INSERT INTO customers PARTITION(subscriptions_year)
 select * from customers_temp;

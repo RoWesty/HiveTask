@@ -1,9 +1,9 @@
 import pandas as pd
 from datetime import date
 
-file_directory_people = "D:\HiveTask\people.csv"
-file_directory_organizations = "D:\HiveTask\organizations.csv"
-file_directory_customers = "D:\HiveTask\customers.csv"
+file_directory_people = ".\people.csv"
+file_directory_organizations = ".\organizations.csv"
+file_directory_customers = ".\customers.csv"
 people = pd.read_csv(file_directory_people)
 organizations = pd.read_csv(file_directory_organizations)
 customers = pd.read_csv(file_directory_customers)
